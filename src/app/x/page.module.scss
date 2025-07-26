@@ -1,0 +1,35 @@
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    to bottom,
+    #0d5f89 0%,     
+    #1da1f2 30%,    
+    #1da1f2 70%,   
+    #0d5f89 100%   
+  );
+}
+
+.text {
+  margin-top: 20px;
+  font-size: 24px;
+  color: #fff;
+}
+
+/* Spin Horizontal */
+@keyframes spin-horizontal {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.rotateY {
+  animation: spin-horizontal 2s linear infinite;
+  color: #FFF;
+}
